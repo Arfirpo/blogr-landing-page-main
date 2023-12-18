@@ -1,12 +1,25 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    "./src/**/*.{js,jsx,ts,tsx}",
-  ],
+  content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        lightRed: "hsl(356, 100%, 66%)", //CTA text
+        veryLightRed: "hsl(355, 100%, 74%)", //CTA hover background
+        veryDarkBlue: "hsl(208, 49%, 24%)", //Headings
+        White: "hsl(0, 0%, 100%)", //Text
+        grayishBlue: "hsl(240, 2%, 79%)", //footer text
+        veryDarkGrayishBlue: "hsl(207, 13%, 34%)", //body copy
+        verydarBlackBlue: "hsl(240, 10%, 16%)", //footer background
+        veryLightRedGradient: "hsl(13, 100%, 72%)", //Intro/CTA Mobile nav
+        lightRedGradient: "hsl(353, 100%, 62%)", //Intro/CTA Mobile nav
+        veryDarkGrayBlue: "hsl(237, 17%, 21%)", //Background Gradient
+        veryDarkDesaturatedBlue: "hsl(237, 23%, 32%)", // Background Gradient
+      },
+      backgroundImage: {
+        pattern: "url(/src/images/bg-pattern-intro-mobile.svg)",
+      },
+    },
   },
   plugins: [],
-}
-
-
+};

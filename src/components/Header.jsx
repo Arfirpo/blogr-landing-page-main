@@ -10,8 +10,8 @@ export const Header = () => {
         <img src={hamburguerMenu} alt="hamburger menu" className="h-6 w-9" />
       </div>
       <div className="flex flex-col items-center text-center w-[75%] text-White gap-5">
-        <h1 className="text-3xl font-bold">A modern publishing platform</h1>
-        <p className="text-[20px] w-[95%] ">Grow your audience and build your online brand</p>
+        <h1 className="text-[30px] font-bold">A modern publishing platform</h1>
+        <p className="text-[16px] w-[95%]  ">Grow your audience and build your online brand</p>
       </div>
     </header>
   );

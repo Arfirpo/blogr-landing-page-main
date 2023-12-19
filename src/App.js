@@ -4,7 +4,7 @@ import { Footer } from "./components/Footer";
 
 function App() {
   return (
-    <div className="flex flex-col justify-center items-center w-[23.4375rem]">
+    <div className="flex flex-col justify-center items-center min-w-[320px]">
       <Header />
       <Main />
       <Footer />

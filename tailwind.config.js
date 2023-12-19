@@ -2,7 +2,27 @@
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
+    screens: {
+      xs: "320px",
+      // => @media (min-width: 320px) { ... }
+
+      sm: "640px",
+      // => @media (min-width: 640px) { ... }
+
+      md: "768px",
+      // => @media (min-width: 768px) { ... }
+
+      lg: "1024px",
+      // => @media (min-width: 1024px) { ... }
+
+      xl: "1280px",
+      // => @media (min-width: 1280px) { ... }
+    },
     extend: {
+      fontFamily: {
+        Overpass: ["Overpass", "sans-serif"],
+        Ubuntu: ["Ubuntu", "sans-serif"],
+      },
       colors: {
         lightRed: "hsl(356, 100%, 66%)", //CTA text
         veryLightRed: "hsl(355, 100%, 74%)", //CTA hover background
@@ -15,9 +35,6 @@ module.exports = {
         lightRedGradient: "hsl(353, 100%, 62%)", //Intro/CTA Mobile nav
         veryDarkGrayBlue: "hsl(237, 17%, 21%)", //Background Gradient
         veryDarkDesaturatedBlue: "hsl(237, 23%, 32%)", // Background Gradient
-      },
-      backgroundImage: {
-        pattern: "url(/src/images/bg-pattern-intro-mobile.svg)",
       },
     },
   },

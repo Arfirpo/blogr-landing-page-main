@@ -33,7 +33,7 @@ export const Main = () => {
 
   return (
     <main>
-      <div className="flex flex-col items-center justify-center gap-[2.5rem] mt-20">
+      <div className="flex flex-col items-center justify-center gap-[2.5rem] mt-20 mb-24">
         <Promotion img={designImg} text={"Designed for the future"} />
         <Paragraph
           title={`${descriptions[1].title}`}
@@ -45,7 +45,7 @@ export const Main = () => {
         />
       </div>
       <MiddleAnnounce />
-      <div className="flex flex-col items-center">
+      <div className="flex flex-col items-center justify-center gap-[2.5rem] mb-[5.625rem] text-veryDarkGrayishBlue">
         <Promotion img={computerImg} text={""} />
         <Paragraph
             title={`${descriptions[4].title}`}

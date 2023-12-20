@@ -15,15 +15,10 @@ export const MiddleAnnounce = () => {
   return (
     <div className="w-full h-[50rem] flex flex-col justify-end relative">
       <div className="h-[78.75%] bg-gradient-to-b from-veryDarkGrayBlue to-veryDarkDesaturatedBlue rounded-tr-[7.5rem] rounded-bl-[7.5rem] overflow-hidden ">
-
-        <div
-          className="w-full h-full flex flex-col items-center justify-evenly pt-[110px]"
-          style={circlePatter}
-        >
-          <img src={phonesImg} alt="phones" className="absolute top-[-20px]" />
-          <Paragraph2
-            title={`${descriptions[3].title}`}
-            paragraph={`${descriptions[3].text}`}
+        <div className="w-full h-full flex flex-col items-center justify-evenly pt-[100px]"
+          style={circlePatter}>
+          <img src={phonesImg} alt="phones" className="absolute top-[-20px] w-[400px]" />
+          <Paragraph2 title={`${descriptions[3].title}`} paragraph={`${descriptions[3].text}`}
           />
         </div>
       </div>

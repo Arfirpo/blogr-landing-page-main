@@ -1,20 +1,8 @@
 import React from "react";
 import { SubMenuBottom } from "./SubMenuBottom";
+import { menu } from "../App";
 
-export const menu = {
-  1: {
-    heading: "Product",
-    items: ["Overview", "Pricing", "Marketplace", "Features", "Integrations"],
-  },
-  2: {
-    heading: "Company",
-    items: ["About", "Team", "Blog", "Careers"],
-  },
-  3: {
-    heading: "Connect",
-    items: ["Contact", "Newsletter", "LinkedIn"],
-  },
-};
+
 
 export const BottomMenu = () => {
   return (
@@ -26,3 +14,4 @@ export const BottomMenu = () => {
   );
 };
 
+  

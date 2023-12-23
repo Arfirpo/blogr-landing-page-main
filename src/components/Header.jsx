@@ -1,16 +1,11 @@
-// Header.js
 import React, { useState } from "react";
 import { Nav } from "./Nav";
 import logo from "../images/logo.svg";
-import { Buttons } from "./Buttons";
+import { Buttons } from "../components/Buttons";
 import patternMobile from "../images/bg-pattern-intro-mobile.svg";
-
-export const buttonTexts = ["start for free", "Sign Up", "Login", "Learn More" ];
-export const selectedIndex = [0, 3];
 
 export const Header = () => {
   const [divVisible, setDivVisible] = useState(true);
-
 
   const hideDiv = () => {
     setDivVisible((state) => !state);
@@ -22,6 +17,8 @@ export const Header = () => {
     backgroundPosition: "-345px -255px",
     backgroundSize: "355%",
   };
+
+  const headerButtons = [0, 1];
 
   return (
     <header className="h-[37.5rem] min-w-full bg-gradient-to-b from-veryLightRedGradient to-lightRedGradient rounded-bl-[7.5rem] overflow-hidden">
@@ -46,7 +43,7 @@ export const Header = () => {
               Grow your audience and build your online brand
             </p>
           </div>
-          <Buttons />
+          <Buttons val={headerButtons} flex={1} />
         </div>
       </div>
     </header>

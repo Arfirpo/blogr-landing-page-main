@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { Nav } from "./Nav";
-import logo from "../images/logo.svg";
 import { Buttons } from "../components/Buttons";
 import patternMobile from "../images/bg-pattern-intro-mobile.svg";
+import logo from "../images/logo.svg";
 
 export const Header = () => {
   const [divVisible, setDivVisible] = useState(true);

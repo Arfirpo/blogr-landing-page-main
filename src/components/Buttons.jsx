@@ -5,7 +5,7 @@ export const Buttons = ({ val, flex }) => {
 
   return (
     <div
-      className={`${flex === 1 ? 'flex-row' : 'flex-col gap-2'} flex  items-center justify-between w-full text-[1em]`}
+      className={`${flex === 1 ? 'flex-row justify-between' : 'flex-col justify-evenly'} flex items-center w-full h-full text-[1em]`}
     >
       {val.map((index) => {
         const isEvenIndex = index % 2 === 0;
@@ -21,7 +21,7 @@ export const Buttons = ({ val, flex }) => {
           }
         } else {
           if (isEvenIndex) {
-            buttonClass += " text-black bg-white";
+            buttonClass += " text-[hsl(208_49%_24%)] bg-white";
           } else {
             buttonClass +=
               " text-[hsl(0,0%,100%)] border-[0.0625rem] border-white bg-gradient-to-r from-veryLightRedGradient to-lightRedGradient";

@@ -34,7 +34,7 @@ export const MenuNav = () => {
           {openItem === menuItem.heading && (
             <ul className="bg-[#ebeaef] w-full h-full flex flex-col justify-evenly rounded-lg py-6 gap-5">
               {menuItem.items.map((item, subIndex) => (
-                <li className="text-[.95rem] text-veryDarkBlue cursor-pointer" key={subIndex}>
+                <li className="text-[.93rem] text-veryDarkGrayishBlue cursor-pointer hover:text-veryDarkBlue hover:text-[0.97rem]" key={subIndex}>
                   {item}
                 </li>
                 ))}              

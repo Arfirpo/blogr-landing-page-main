@@ -23,7 +23,7 @@ export const Nav = ({ hideDiv }) => {
         onClick={handleButtonClick}
         src={changeButton ? hamburguerMenu : closeMenu}
         alt="hamburger menu"
-        className={`${changeButton ? "w-9 h-5" : "w-6 h-6"}`}
+        className={`${changeButton ? "w-9 h-5" : "w-6 h-6"} cursor-pointer`}
       />
       <div
         className={` ${

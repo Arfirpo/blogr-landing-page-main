@@ -32,7 +32,7 @@ export const MenuNav = () => {
             />
           </div>
           {openItem === menuItem.heading && (
-            <ul className="bg-[#ebeaef] w-full h-full flex flex-col justify-evenly py-6 gap-5">
+            <ul className="bg-[#ebeaef] w-full h-full flex flex-col justify-evenly rounded-lg py-6 gap-5">
               {menuItem.items.map((item, subIndex) => (
                 <li className="text-[.95rem] text-veryDarkBlue cursor-pointer" key={subIndex}>
                   {item}

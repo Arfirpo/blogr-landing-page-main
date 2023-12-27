@@ -32,14 +32,14 @@ export const Header = () => {
   const bgPatternDesktop = {
     backgroundImage: `url(${patternDesktop})`,
     backgroundRepeat: "no-repeat",
-    backgroundPosition: "27% 52%",
+    backgroundPosition: "25% 52%",
     backgroundSize: "222%",
   };
 
   const headerButtons = [0, 1];
 
   return (
-    <header className="h-[37.5rem] min-w-full bg-gradient-to-b from-veryLightRedGradient to-lightRedGradient rounded-bl-[7.5rem] overflow-hidden">
+    <header className="h-[37.5rem] min-w-full bg-gradient-to-b md:bg-gradient-to-r from-veryLightRedGradient to-lightRedGradient rounded-bl-[7.5rem] overflow-hidden">
       <div
         className="w-full h-full flex flex-col justify-start md:justify-around xl:justify-start items-center gap-[7.1875rem] md:gap-0 xl:gap-[7.1875rem] -z-10 "
         style={windowWidth < 768 ? bgPatternMobile : bgPatternDesktop}

@@ -5,7 +5,7 @@ export const Buttons = ({ val, flex }) => {
 
   return (
     <div
-      className={`${flex === 1 ? 'flex-row justify-between' : 'flex-col justify-evenly'} flex items-center w-full max-w-[19.9375rem] h-full text-[1em]`}
+      className={`${flex === 1 ? 'flex-row justify-between' : 'flex-col justify-evenly'} flex items-center w-full max-w-[19.9375rem] h-full text-[1em] md:font-bold`}
     >
       {val.map((index) => {
         const isEvenIndex = index % 2 === 0;
@@ -14,17 +14,17 @@ export const Buttons = ({ val, flex }) => {
 
         if (index < 2) {
           if (isEvenIndex) {
-            buttonClass += " text-[hsl(356,100%,66%)] bg-white";
+            buttonClass += "text-[hsl(356_100%_66%)] bg-white";
           } else {
             buttonClass +=
               " text-[hsl(0,0%,100%)] border-[0.0625rem] border-white";
           }
         } else {
           if (isEvenIndex) {
-            buttonClass += " text-[hsl(208_49%_24%)] bg-white md:h-full";
+            buttonClass += " text-[hsl(208_49%_24%)] md:text-white bg-white md:h-full md:bg-transparent";
           } else {
             buttonClass +=
-              "text-[hsl(0,0%,100%)] border-[0.0625rem] border-white bg-gradient-to-r from-veryLightRedGradient to-lightRedGradient md:h-full";
+              "text-[hsl(0,0%,100%)] border-[0.0625rem] border-white md:border-none bg-gradient-to-r from-veryLightRedGradient to-lightRedGradient md:h-full md:bg-[#fff] md:bg-none md:text-[hsl(356_100%_66%)] md:font-bold md:hover:text-white md:hover:bg-[hsl(355_100%_74%)]";
           }
         }
 

@@ -5,7 +5,7 @@ import { Buttons } from "./Buttons";
 import { MenuNav } from "./MenuNav";
 
 
-export const Nav = ({ hideDiv }) => {
+export const NavMobile = ({ hideDiv }) => {
   const [changeButton, setChangeButton] = useState(true);
   const navButtons = [2, 3];
   const handleButtonClick = () => {

@@ -41,10 +41,10 @@ export const Header = () => {
   return (
     <header className="h-[37.5rem] min-w-full bg-gradient-to-b md:bg-gradient-to-r from-veryLightRedGradient to-lightRedGradient rounded-bl-[7.5rem] overflow-hidden">
       <div
-        className="w-full h-full flex flex-col justify-start md:justify-around xl:justify-start items-center gap-[7.1875rem] md:gap-0 xl:gap-[7.1875rem] -z-10 "
+        className="w-full h-full flex flex-col justify-start md:justify-evenly xl:justify-start items-center gap-[7.1875rem] md:gap-32 xl:gap-[7.1875rem] -z-10 "
         style={windowWidth < 768 ? bgPatternMobile : bgPatternDesktop}
       >
-        <div className="flex items-center justify-between md:w-[95%] md:flex-col  h-[6%] xl:h-[8%] xl:flex-row w-[90%] xl:w-[77%] mt-[52px] md:mt-0 md:gap-5 xl:gap-0 xl:mt-[52px]">
+        <div className="flex items-center justify-between md:w-[95%] md:flex-col  h-[6%] xl:h-[8%] xl:flex-row w-[90%] xl:w-[77%] mt-[52px] md:mt-0 md:gap-9 xl:gap-0 xl:mt-[52px]">
           <img src={logo} alt="blogr logo" />
           {windowWidth < 768 ? <NavMobile hideDiv={hideDiv} /> : <NavDesktop />}
         </div>

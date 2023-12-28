@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import hamburguerMenu from "../images/icon-hamburger.svg";
 import closeMenu from "../images/icon-close.svg";
 import { Buttons } from "./Buttons";
@@ -7,6 +7,17 @@ import { MenuNav } from "./MenuNav";
 
 export const NavMobile = ({ hideDiv }) => {
   const [changeButton, setChangeButton] = useState(true);
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  const updateWindowWidth = () => {
+    setWindowWidth(window.innerWidth);
+  };
+
+  useEffect(() => {
+    window.addEventListener("resize", updateWindowWidth);
+  });
+
+
   const navButtons = [2, 3];
   const handleButtonClick = () => {
     toggleButton();
@@ -20,7 +31,7 @@ export const NavMobile = ({ hideDiv }) => {
   return (
     <div>
       <img
-        onClick={handleButtonClick}
+        onClick={windowWidth < 768 ? handleButtonClick : null}
         src={changeButton ? hamburguerMenu : closeMenu}
         alt="hamburger menu"
         className={`${changeButton ? "w-9 h-5" : "w-6 h-6"} cursor-pointer`}

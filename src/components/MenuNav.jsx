@@ -28,7 +28,8 @@ export const MenuNav = () => {
           <div className="flex items-center justify-center gap-2 ">
             <h3
               className="text-veryDarkBlue cursor-pointer md:text-White md:hover:underline"
-              onClick={() => handleHeadingClick(menuItem.heading)}
+              onClick={windowWidth < 768 ? () => handleHeadingClick(menuItem.heading) : null}
+              onMouseOver={windowWidth > 768 ?  () => handleHeadingClick(menuItem.heading) : null}
             >
               {menuItem.heading}
             </h3>

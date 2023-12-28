@@ -15,8 +15,21 @@ export const Header = () => {
   };
 
   useEffect(() => {
-    window.addEventListener("resize", updateWindowWidth);
-  });
+    const handleResize = () => {
+      updateWindowWidth();
+      // Si el ancho de la ventana es menor a 768 y divVisible es false, establece divVisible a true
+      if (window.innerWidth < 768 && !divVisible) {
+        setDivVisible(true);
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    // Limpieza del event listener
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, [divVisible]); // Agrega divVisible como dependencia
 
   const hideDiv = () => {
     setDivVisible((state) => !state);
@@ -49,9 +62,7 @@ export const Header = () => {
           {windowWidth < 768 ? <NavMobile hideDiv={hideDiv} /> : <NavDesktop />}
         </div>
         <div
-          className={`${
-            divVisible ? "flex" : "hidden"
-          } flex-col items-center justify-center gap-12 w-[75%] `}
+          className={`${divVisible ? "flex" : "hidden"} 'flex' md:flex flex-col items-center justify-center gap-12 w-[75%] `}
         >
           <div className="text-White text-center flex items-center flex-col gap-[.5rem]">
             <h1 className="text-[1.6rem] mbl:text-[1.875rem] xs:font-bold xl:text-[3.9rem]">

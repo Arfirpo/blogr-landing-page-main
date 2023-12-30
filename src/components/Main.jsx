@@ -1,9 +1,9 @@
 import React from "react";
 import { Promotion } from "./Promotion";
 import computerImg from "../images/illustration-laptop-mobile.svg";
-import designImg from "../images/illustration-editor-mobile.svg";
 import { Paragraph } from "../components/Paragraph";
 import { MiddleAnnounce } from "./MiddleAnnounce";
+import { Announce } from "./Announce";
 
 export const descriptions = {
   1: {
@@ -28,33 +28,25 @@ export const descriptions = {
   },
 };
 
-
 export const Main = () => {
-
   return (
-    <main>
-      <div className="flex flex-col items-center justify-center gap-[2.5rem] mt-20 mb-24">
-        <Promotion img={designImg} text={"Designed for the future"} />
-        <Paragraph
-          title={`${descriptions[1].title}`}
-          paragraph={`${descriptions[1].text}`}
-        />
-        <Paragraph
-          title={`${descriptions[2].title}`}
-          paragraph={`${descriptions[2].text}`}
-        />
+    <main className="w-full h-full text-center ">
+      <div className="flex flex-col justify-evenly gap-16 mt-28 relative
+      ">
+        <h1 className="text-2xl lg:text-4xl font-semibold text-veryDarkBlue ">Designed for the Future</h1>
+        <Announce />
       </div>
       <MiddleAnnounce />
       <div className="flex flex-col items-center justify-center gap-[2.5rem] mb-[5.625rem] text-veryDarkGrayishBlue">
         <Promotion img={computerImg} text={""} />
         <Paragraph
-            title={`${descriptions[4].title}`}
-            paragraph={`${descriptions[4].text}`}
-          />
-          <Paragraph
-            title={`${descriptions[5].title}`}
-            paragraph={`${descriptions[5].text}`}
-          />
+          title={`${descriptions[4].title}`}
+          paragraph={`${descriptions[4].text}`}
+        />
+        <Paragraph
+          title={`${descriptions[5].title}`}
+          paragraph={`${descriptions[5].text}`}
+        />
       </div>
     </main>
   );

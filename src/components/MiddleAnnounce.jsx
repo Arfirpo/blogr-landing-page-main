@@ -1,23 +1,42 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import bgCircles from "../images/bg-pattern-circles.svg";
 import phonesImg from "../images/illustration-phones.svg";
 import { Paragraph2 } from "./Paragraph2";
 import { descriptions } from "./Main";
 
 export const MiddleAnnounce = () => {
-  const circlePatter = {
+
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const updateWindowWidth = () => {
+    setWindowWidth(window.innerWidth);
+  };
+
+  useEffect(() => {
+    window.addEventListener("resize", updateWindowWidth);
+  });
+
+  const circlePatterMobile = {
     backgroundImage: `url(${bgCircles})`,
     backgroundRepeat: "no-repeat",
-    backgroundPosition: "-115px -230px",
-    backgroundSize: "160%",
+    backgroundPosition: "-135px -400px",
+    backgroundSize: "150%",
+  };
+
+  const circlePatterDesktop = {
+    backgroundImage: `url(${bgCircles})`,
+    backgroundRepeat: "no-repeat",
+    backgroundPosition: "-250px -750px",
+    backgroundSize: "50%",
   };
 
   return (
-    <div className="w-full h-[50rem] flex flex-col justify-end relative">
+    <div className="w-full h-[50rem] md:h-[34rem] flex flex-col justify-end relative">
       <div className="h-[78.75%] bg-gradient-to-b from-veryDarkGrayBlue to-veryDarkDesaturatedBlue rounded-tr-[7.5rem] rounded-bl-[7.5rem] overflow-hidden ">
-        <div className="w-full h-full flex flex-col items-center justify-evenly pt-[100px]"
-          style={circlePatter}>
-          <img src={phonesImg} alt="phones" className="absolute top-[-20px] w-[400px]" />
+        <div className="w-full h-full flex flex-col md:flex-row items-center justify-evenly md:justify-end pt-[100px] md:p-0"
+          style={windowWidth < 768 ? circlePatterMobile : circlePatterDesktop}>
+          <div className="absolute w-[400px] top-[-20px] md:w-[40%] max-w-[570px] md:left-5 md:top-12">
+            <img src={phonesImg} alt="phones" className="w-full h-full" />
+          </div>
           <Paragraph2 title={`${descriptions[3].title}`} paragraph={`${descriptions[3].text}`}
           />
         </div>

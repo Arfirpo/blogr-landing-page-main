@@ -33,7 +33,7 @@ export const Main = () => {
     <main className="w-full h-full text-center ">
       <div className="flex flex-col justify-evenly gap-16 mt-28 relative
       ">
-        <h1 className="text-2xl lg:text-4xl font-semibold text-veryDarkBlue ">Designed for the Future</h1>
+        <h1 className="text-2xl lg:text-4xl font-semibold text-veryDarkBlue -z-10">Designed for the Future</h1>
         <Announce />
       </div>
       <MiddleAnnounce />

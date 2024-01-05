@@ -42,7 +42,7 @@ export const MenuNav = () => {
             />
           </div>
           {openItem === menuItem.heading && (
-            <ul className="bg-[#ebeaef] md:absolute w-full h-full md:w-[220%] md:h-max md:top-[2.5rem] md:-left-8 flex flex-col justify-evenly md:justify-center md:gap-2 items-start pl-8 rounded-lg py-6 gap-5 md:shadow-xl">
+            <ul className="bg-[#ebeaef] items-center md:absolute w-full h-full md:w-[220%] md:h-max md:top-[2.5rem] md:-left-8 flex flex-col justify-evenly md:justify-center md:gap-2 md:items-start rounded-lg py-6 gap-5 md:shadow-xl z-10 md:pl-8">
               {menuItem.items.map((item, subIndex) => (
                 <li
                   className="text-[.93rem] text-veryDarkGrayishBlue cursor-pointer hover:text-veryDarkBlue hover:text-[0.97rem] md:hover:text-[1.1rem]"

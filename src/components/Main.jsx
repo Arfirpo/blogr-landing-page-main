@@ -1,7 +1,4 @@
 import React from "react";
-import { Promotion } from "./Promotion";
-import computerImg from "../images/illustration-laptop-mobile.svg";
-import { Paragraph } from "../components/Paragraph";
 import { MiddleAnnounce } from "./MiddleAnnounce";
 import { Announce } from "./Announce";
 import { Announce2 } from "./Announce2";

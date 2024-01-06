@@ -18,8 +18,8 @@ export const MiddleAnnounce = () => {
   const circlePatterMobile = {
     backgroundImage: `url(${bgCircles})`,
     backgroundRepeat: "no-repeat",
-    backgroundPosition: "-135px -400px",
-    backgroundSize: "150%",
+    backgroundPosition: "-85px -195px",
+    backgroundSize: "cover",
   };
 
   const circlePatterDesktop = {
@@ -30,11 +30,11 @@ export const MiddleAnnounce = () => {
   };
 
   return (
-    <div className="w-full h-[50rem] md:h-[40rem] max-h-[35rem] lg:h-[34rem] flex flex-col justify-end relative">
+    <div className="w-full h-[50rem] md:h-[40rem] xl:max-h-[35rem] lg:h-[34rem] flex flex-col justify-end relative">
       <div className="h-[78.75%] bg-gradient-to-b from-veryDarkGrayBlue to-veryDarkDesaturatedBlue rounded-tr-[7.5rem] rounded-bl-[7.5rem] overflow-hidden ">
-        <div className="w-full h-full flex flex-col lg:flex-row items-center justify-evenly lg:justify-end pt-[100px] lg:p-0"
+        <div className="w-full h-full flex flex-col lg:flex-row items-center justify-evenly lg:justify-end mbl:pt-24 sm:pt-56 md:pt-24 lg:p-0"
           style={windowWidth < 768 ? circlePatterMobile : circlePatterDesktop}>
-          <div className="absolute w-[400px] top-[-20px] lg:w-[60%] lg:left-2 xl:w-[40%] max-w-[570px] xl:left-5 lg:top-12">
+          <div className="absolute w-[300px] sm:w-[95%] sm:max-w-[28.125rem] top-[20px] sm:top-[-20px] lg:w-[60%] lg:max-w-[35rem] lg:left-2 xl:w-[44%] xl:max-w-[35rem] xl:left-5 lg:top-12">
             <img src={phonesImg} alt="phones" className="w-full h-full" />
           </div>
           <Paragraph2 title={`${descriptions[3].title}`} paragraph={`${descriptions[3].text}`}

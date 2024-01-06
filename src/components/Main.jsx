@@ -4,6 +4,7 @@ import computerImg from "../images/illustration-laptop-mobile.svg";
 import { Paragraph } from "../components/Paragraph";
 import { MiddleAnnounce } from "./MiddleAnnounce";
 import { Announce } from "./Announce";
+import { Announce2 } from "./Announce2";
 
 export const descriptions = {
   1: {
@@ -31,22 +32,19 @@ export const descriptions = {
 export const Main = () => {
   return (
     <main className="w-full h-full text-center ">
-      <div className="flex flex-col justify-evenly gap-16 mt-28 relative
-      ">
-        <h1 className="text-2xl lg:text-4xl font-semibold text-veryDarkBlue -z-10">Designed for the Future</h1>
+      <div
+        className="flex flex-col justify-evenly gap-16 mt-28 relative
+      "
+      >
+        <h1 className="text-2xl lg:text-4xl font-semibold text-veryDarkBlue -z-10">
+          Designed for the Future
+        </h1>
         <Announce />
       </div>
       <MiddleAnnounce />
-      <div className="flex flex-col items-center justify-center gap-[2.5rem] mb-[5.625rem] text-veryDarkGrayishBlue">
-        <Promotion img={computerImg} text={""} />
-        <Paragraph
-          title={`${descriptions[4].title}`}
-          paragraph={`${descriptions[4].text}`}
-        />
-        <Paragraph
-          title={`${descriptions[5].title}`}
-          paragraph={`${descriptions[5].text}`}
-        />
+      <div className="flex flex-col justify-evenly gap-16 mt-28 relative
+      ">
+        <Announce2 />
       </div>
     </main>
   );

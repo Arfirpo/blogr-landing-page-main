@@ -6,7 +6,7 @@ export const Paragraph = ({ title, paragraph }) => {
       <h1 className="w-[57.33%] xl:w-[80%] text-2xl xl:text-3xl font-semibold text-veryDarkBlue">
         {title}
       </h1>
-      <p className="w-[75%] tracking-[-1.2px] text-lg">{paragraph}</p>
+      <p className="w-[75%] tracking-[-1.2px] text-lg xl:w-[80%]">{paragraph}</p>
     </div>
   );
 };

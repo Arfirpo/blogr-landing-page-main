@@ -62,7 +62,7 @@ export const MenuNav = () => {
             <ul
               className={`bg-[#ebeaef] md:absolute w-full h-full md:w-[220%] md:h-max md:top-[2.5rem] md:-left-8 ${
                 openItem ? "flex" : "hidden"
-              } flex-col justify-evenly md:justify-center md:gap-2 items-start pl-8 rounded-lg py-6 gap-5 md:shadow-xl`}
+              } flex-col justify-evenly md:justify-center md:gap-2 items-center md:items-start md:pl-8 rounded-lg py-6 gap-5 md:shadow-xl`}
             >
               {menuItem.items.map((item, subIndex) => (
                 <li

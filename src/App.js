@@ -19,7 +19,7 @@ export const menu = {
 
 function App() {
   return (
-    <div className="flex flex-col justify-center items-center min-w-[320px] max-w-max max-h-max">
+    <div className="flex flex-col justify-center items-center min-w-[320px] max-w-max max-h-max md:overflow-hidden">
       <Header />
       <Main />
       <Footer />

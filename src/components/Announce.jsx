@@ -6,7 +6,7 @@ import designIDskt from "../images/illustration-editor-desktop.svg";
 
 export const Announce = () => {
   return (
-    <div className="flex flex-col xl:flex-row-reverse items-center justify-center gap-[2.5rem] mb-24 xl:justify-end">
+    <div className="flex flex-col xl:flex-row-reverse items-center justify-center gap-[2.5rem] mb-24 xl:mb-[16rem] xl:mt-[6rem] xl:justify-end">
       <div className="w-full xl:absolute flex flex-col items-center gap-11 xl:w-[75%] xl:right-[-365px] lg:-z-20">
         <picture>
           <source 

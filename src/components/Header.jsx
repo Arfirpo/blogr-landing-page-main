@@ -57,7 +57,7 @@ export const Header = () => {
         className="w-full h-full flex flex-col justify-start md:justify-evenly xl:justify-start items-center gap-[7.1875rem] md:gap-32 xl:gap-[7.1875rem] -z-10 "
         style={windowWidth < 768 ? bgPatternMobile : bgPatternDesktop}
       >
-        <div className="flex items-center justify-between md:w-[95%] md:flex-col  h-[6%] xl:h-[8%] xl:flex-row w-[90%] xl:w-[77%] mt-[52px] md:mt-0 md:gap-9 xl:gap-0 xl:mt-[52px]">
+        <div className="flex items-center justify-between md:w-[95%] md:flex-col  h-[6%] xl:h-[8%] xl:flex-row w-[90%] xl:w-[77%] mt-[3.25rem] md:mt-0 md:gap-9 xl:gap-0 xl:mt-[3.25rem]">
           <img src={logo} alt="blogr logo" />
           {windowWidth < 768 ? <NavMobile hideDiv={hideDiv} /> : <NavDesktop />}
         </div>
@@ -68,7 +68,7 @@ export const Header = () => {
             <h1 className="text-[1.6rem] mbl:text-[1.875rem] xs:font-bold xl:text-[3.9rem]">
               A modern publishing platform
             </h1>
-            <p className="text-[14px] mbl:text-[16px] w-[95%] xl:text-[1.35rem]">
+            <p className="text-[.875rem] mbl:text-[1rem] w-[95%] xl:text-[1.35rem]">
               Grow your audience and build your online brand
             </p>
           </div>

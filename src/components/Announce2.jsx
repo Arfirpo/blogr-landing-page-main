@@ -6,17 +6,17 @@ import designIDskt from "../images/illustration-laptop-desktop.svg";
 
 export const Announce2 = () => {
   return (
-    <div className="flex flex-col xl:flex-row-reverse items-center justify-center gap-[2.5rem] mb-24 xl:mb-[300px] xl:justify-start xl:mt-[200px]">
+    <div className="flex flex-col xl:flex-row-reverse items-center justify-center gap-[2.5rem] mb-24 xl:mb-[18.75rem] xl:justify-start xl:mt-[12.5rem]">
       <div className="w-full xl:absolute flex flex-col items-center gap-11 xl:w-[75%] xl:left-[-320px] lg:-z-20">
         <picture>
           <source 
             srcSet={designMbl}
-            media="(width < 1024px)" />
+            media="(width < 64rem)" />
           <source
             srcSet={designIDskt}
-            media="(width >= 1300px)"
+            media="(width >= 81.25rem)"
             alt="laptop"
-            className="xl:absolute w-[520px] -right-9"
+            className="xl:absolute w-[32.5rem] -right-9"
           />
           <img src={designMbl} alt="mobile" />
         </picture>

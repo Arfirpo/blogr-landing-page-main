@@ -38,7 +38,7 @@ export const MenuNav = () => {
   };
 
   return (
-    <div className="flex flex-col md:flex-row md:max-w-[310px] items-center justify-center gap-7 text-center text-lg font-bold w-full">
+    <div className="flex flex-col md:flex-row md:max-w-[19.375rem] items-center justify-center gap-7 text-center text-lg font-bold w-full">
       {Object.values(menu).map((menuItem, index) => (
         <div key={index} className="w-full h-full flex flex-col gap-4 md:relative">
           <div className="flex items-center justify-center gap-2 ">

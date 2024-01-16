@@ -11,12 +11,12 @@ export const Announce = () => {
         <picture>
           <source 
             srcSet={designMbl}
-            media="(width < 1024px)" />
+            media="(width < 64rem)" />
           <source
             srcSet={designIDskt}
-            media="(width >= 1300px)"
+            media="(width >= 81.25rem)"
             alt="laptop"
-            className="xl:absolute w-[520px] -right-9"
+            className="xl:absolute w-[32.5rem] -right-9"
           />
           <img src={designMbl} alt="mobile" />
         </picture>
